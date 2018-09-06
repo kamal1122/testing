@@ -1,0 +1,230 @@
+html,body{
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container1{
+	display: flex;
+	align-items: center;
+	background-color: black;
+    position: fixed;
+	width:100vw;
+	top: 0;
+	margin:0;
+	height:auto;
+}
+.hero-image{
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   padding:0px;
+   margin-top:5%;
+   background-size: 100% 100%;
+ 
+  }
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 0px;
+}
+.logo-left{
+   flex: 1;	
+}
+.header-right{
+	flex: 4;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	}
+.header-right li{
+	display: inline-block;
+	margin-right: 2vw;
+	
+	}
+.header-right a{
+	text-decoration: none;
+	color: #a2a2a2;
+}
+.header-right a:hover{
+	color: red;
+}
+
+@media screen and (max-width: 600px) {
+	.container1{
+		display: flex;
+		flex-flow: wrap;
+		flex-direction:column;
+		width:100vw;
+		
+	}
+	.logo-left{
+		flex:1;
+		flex-basis:100%;
+		justify-content:center;
+		}
+	.header-right ul{
+		display: flex;
+		flex-direction:column;
+                   }
+	}
+
+
+.container2{
+	background-color: white;
+	color:black;
+	text-align:center;
+	font-size:1vw;
+	background-size:100% 100%;
+
+	}
+.container3{
+	background-color: white;
+	display: flex;
+}
+.box3left{
+	flex:1;
+	padding: 10px 25px;
+	color:white;
+	background:black;
+	background-size: 100% 100%;
+}.box3right{
+	flex:1;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/balloon.jpg");
+	box-sizing: border-box;
+    background-size: 100% 100%;
+
+}
+.container4{
+	background-color: white;
+	display: flex;
+	flex-flow: row wrap;
+}
+.box4left{
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../image/messi1.jpg");
+	box-sizing: border-box;
+	padding: 10px 25px;
+	flex: 1;
+	color:#E5AC45;
+	
+	background-size: 100% 100%;
+	
+}
+.box4middle{
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../image/ronaldo.jpg");
+	box-sizing: border-box;
+	padding: 10px 25px;
+	flex: 1;
+	color:#E5AC45;
+	/*background-repeat: no-repeat;*/
+	background-size: 100% 100%;
+	background-color: #B6CBEB;
+	
+}
+.box4right{
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../image/salah.jpg");
+	box-sizing: border-box;
+	padding: 10px 25px;
+	flex: 1;
+	color:#E5AC45;
+	
+	
+	/*background-repeat: no-repeat;*/
+	background-size: 100% 100%;
+}
+@media screen and (max-width: 700px) {
+    .container2{
+    		font-size:1vw;
+    }
+    .container3{
+
+      
+	display: flex;
+	flex-flow:column wrap;
+     
+
+    }
+    .box3left{
+	flex:1;
+	padding: 10px 25px;
+	
+	background-size: 100% 100%;
+    }.box3right{
+	flex:1;
+	
+	box-sizing: border-box;
+    background-size: 100% 100%;
+
+    }
+	.container4{
+		
+		display: flex;
+		flex-flow:column wrap;
+	}
+	.box4left{
+		box-sizing: border-box;
+		padding: 10px 25px;
+	}
+	.box4middle{
+		box-sizing: border-box;
+		padding: 10px 25px;
+	}
+	.box4right{
+		box-sizing: border-box;
+		padding: 10px 25px;
+	
+	}
+}
+.footer{
+	display: flex;
+	background-color: black;
+	width: 100%;
+}
+.footer-box{
+	flex: 2;
+	color: #808080;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+@media screen and (max-width:700px)  {
+	.footer{
+		display: flex;
+		flex-flow: column wrap;
+	}
+	
+}
+
+@media (min-width: 700px) {
+	
+}
+
+#facebook i{
+	color: #a2a2a2;
+	margin-right:25px;
+}
+#facebook i:hover{
+	color: #3b5998;
+	margin-right:25px;
+}
+#twitter i{
+	color: #a2a2a2;
+	margin-right:25px;
+}
+#twitter i:hover{
+	color: #0084b4;
+	margin-right:25px;
+}
+#instagram i{
+	color: #a2a2a2;
+	margin-right:25px;
+}
+#instagram  i:hover{
+	color:#cd486b;
+	margin-right:25px;
+}
+
